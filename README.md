@@ -1,2 +1,0 @@
-# mobile-clip
-mobile clip

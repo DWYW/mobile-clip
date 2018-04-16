@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Tensyn,Ewen" />
+  <meta name="x5-orientation" content="portrait">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, target-densitydpi=device-dpi">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      overflow: hidden;
+    }
+    .test {
+      font-size: 36px;
+    }
+
+    input {
+      font-size: 30px;
+      width: 400px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="test">
+    这是一段测试文字
+  </div>
+
+  <div id="img"></div>
+
+  <div>
+    <input type="file" id='file'>
+  </div>
+
+  <input type="text">
+
+  <script src="../dist/imager.js"></script>
+  <script src="./vconsole.js"></script>
+  <script>
+      var vConsole = new VConsole(); // 用于调试
+  </script>
+  <script>
+    document.getElementById('file').addEventListener('change', function (e) {
+      var file = e.target.files[0]
+      console.log(file)
+
+      var clip = new CLIP({
+        orientation: 8,
+        save: function (res) {
+          console.log(res)
+        },
+        beforeDestroy: function () {
+          document.getElementById('file').value = null
+        }
+      }).show(e.target.files[0])
+    }, false)
+  </script>
+</body>
+
+</html>

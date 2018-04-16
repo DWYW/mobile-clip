@@ -1,7 +1,7 @@
 {
-  "name": "gulp_test",
+  "name": "mobile_clip",
   "version": "1.0.0",
-  "description": "gulp test",
+  "description": "mobile_clip",
   "scripts": {
     "dev": "gulp & anywhere -p 4003",
     "dist": "gulp -p",

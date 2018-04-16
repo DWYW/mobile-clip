@@ -1,6 +1,6 @@
 {
   "name": "mobile_clip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mobile_clip",
   "keywords": ["mobile", "mobile clip", "clip", "js"],
   "main": "dist/clip.js",

@@ -12,7 +12,7 @@ const opn = require('opn')
 const config = {
   js: ['src/core.js'],
   dist: 'dist',
-  target: 'imager.js',
+  target: 'clip.js',
   port: 3001
 }
 

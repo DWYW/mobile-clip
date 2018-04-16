@@ -2,12 +2,14 @@
   "name": "mobile_clip",
   "version": "1.0.0",
   "description": "mobile_clip",
+  "keywords": ["mobile", "mobile clip", "clip", "js"],
+  "main": "dist/clip.js",
   "scripts": {
     "dev": "gulp & anywhere -p 4003",
     "dist": "gulp -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "DWYW",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -205,7 +205,7 @@
   }
 
   /**
-   * 创建加载提示
+   * 创建加载提示信息
    * @return {HTMLElement}
    */
   CLIP.fn.createLoading = function () {
